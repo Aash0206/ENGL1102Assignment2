@@ -125,7 +125,7 @@ if (highestCountVar == 'a') {
 //wriitng html code
 function postData() {
     const container = document.getElementById('results');
-    container.innerHTML = `<h1 style="color: white; font-family: copperplate">${name}, you are ${characters}!</h1>
+    container.innerHTML = `<h1 style="color: white; font-family: copperplate">${name}, you are a(n) ${characters}!</h1>
                             <p style="color:white; font-family: fantasy">${sentence}</p>
                             <img src="${image}"></img>`;
     }
