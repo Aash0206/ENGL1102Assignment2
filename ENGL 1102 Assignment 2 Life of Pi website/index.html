@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Life of Pi Alternative Stories</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <form action="results.html" method="get">
+            <h1 style="font-family: Herculanum; text-align: center">Faith and Storytelling</h1>
+            <p style="font-family: fantasy">This quiz allows you to explore the meaning within the Life of Pi through your own worldview. Based on your responses, you will receive a personalised profile that interprets Pi's story in the light of your perspectives.</p>
+            <img src="images/OpeningImg.png">
+            <hr size="5" color="#1afffb">
+
+            <div>
+                <label form="fname" style="font-family: fantasy">What is your name?*</label>
+                <input type="text" id="fname" name = "fname" placeholder="Enter your name" required>
+            
+            </div>
+            
+            <div>
+                <br><label form="faith" style="font-family: fantasy">On a scale of 1-5, how important is faith to you in difficult situations*</label>
+                <input type="number" id="faith" name="faith" min="1" max="5" required>
+            </div>
+
+            <div>
+                <p style="font-family: fantasy">How do handle times of uncertainty?</p>
+                <input type="radio" id="A" name="trait" value="A">
+                <label for="A" style="font-family: fantasy">I think everything happens for a reason if even I may not understand the reason at the moment.</label><br>
+
+                <input type="radio" id="B" name="trait" value="B">
+                <label for="B" style="font-family: fantasy">I approach the situation with logic and try to control the things that I can control.</label><br>
+
+                <input type="radio" id="C" name="trait" value="C">
+                <label for="C" style="font-family: fantasy">I try to think of all the possible outcomes without embracing a single belief.</label><br>
+
+                <input type="radio" id="D" name="trait" value="D">
+                <label for="D" style="font-family: fantasy">I accept what comes to me and embrace the uncertainty.</label>
+            </div>
+
+            <section>
+                <p style="font-family: fantasy">If you were stranded on a lifeboat similar to Pi, what would be your priority?</p><br>
+                <ul class="elementImgs">
+                    <li class="card-A">
+                        <label>
+                            <input type="radio" id="B" name="stranded" value="B">
+                        </label>
+                        <div class="title">
+                            <h3 style="color: white;">Finding a possible means of communication.</h3>
+                        </div>
+                    </li>
+                    <li class="card-B">
+                        <label>
+                            <input type="radio" id="A" name="stranded" value="A">
+                        </label>
+                        <div class="title">
+                            <h3>Maintain hope that things will get better.</h3>
+                        </div>
+                    </li>
+                    <li class="card-C">
+                        <label>
+                            <input type="radio" id="D" name="stranded" value="D">
+                        </label>
+                        <div class="title">
+                            <h3>Creating a plan of survival for the next few days.</h3>
+                        </div>
+                    </li>
+                    <li class="card-D">
+                        <label>
+                            <input type="radio" id="C" name="stranded" value="C">
+                        </label>
+                        <div class="title">
+                            <h3>Try to find meaning within the situation.</h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+                <p style="font-family: fantasy">What is your belief about the nature of truth</p>
+                <input type="radio" id="C" name="truth" value="C">
+                <label for="C" style="font-family: fantasy">We can't really determine if truth is subjective or if there exists a single version of truth.</label><br>
+
+                <input type="radio" id="A" name="truth" value="A">
+                <label for="A" style="font-family: fantasy">There exists one ultimate truth.</label><br>
+
+                <input type="radio" id="D" name="truth" value="D">
+                <label for="D" style="font-family: fantasy">Truth can change based on circumstances and is subjective.</label><br>
+
+                <input type="radio" id="B" name="truth" value="B">
+                <label for="B" style="font-family: fantasy">Something is "true" if it leads to positive outcomes and if holding that belief has a practical use.</label><br>
+
+            <div>
+                <p style="font-family: fantasy">On a scale of 1 to 5, how strongly do you rely on either your imagination or your faith to guide you through tough situations?*</p>
+                <input type="range" name="range" min="1" max = "5" required>
+            </div>
+
+            <div>
+                <label for="version" style="font-family: fantasy">If you were given two different versions of a story -one that is harsh but true, and one that is comforting but fake- which would you believe?</label>
+                <select name="version" style="width:300px">
+                    <option value="B" style="font-family: fantasy">The harsh but true version, because you believe in facing reality even when it is difficult.</option>
+                    <option value="A" style="font-family: fantasy">The comforting and fake version, because you prefer to maintain your happiness.</option>
+                    <option value="C" style="font-family: fantasy">Both versions and then decide which one resonates with me more at that moment in time.</option>
+                    <option value="D" style="font-family: fantasy">Create my own version of the story by blending fact and fiction to make the story more meaningful.</option>
+                </select>
+            </div>
+
+            <div>
+                <input id="submit-button" type="submit" onclick = "alert('You have submitted your response')" value="Submit" style="height: 30px; width:80px; border-radius: 10px; color: black; background-color:#1afffb">
+            </div>
+        </form>
+
+    </body>
+</html>
